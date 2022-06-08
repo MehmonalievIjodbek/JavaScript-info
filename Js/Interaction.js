@@ -180,4 +180,34 @@
 // let x = 1 + (a *= 2);
 // console.log(x);
 
-// 23... 
+// 23... taqqoslashlar 
+
+// alert(2 > 1);  //true
+// alert(2 == 1); //false
+// alert(2 != 1); //true
+
+// 24... Har qanday taqqoslash o'ziga o'zgaruvchi tayinlashi mumkin 
+
+// let result = 5 > 4; // assign the result of the comparison
+// alert( result );
+
+// 25... boshqasidan kottaroq yoki yo'qligini bilish uchun ishlatiladi 
+
+// alert( 'Z' > 'A'); //true
+// alert( 'Glow' > 'Glee'); //true
+// alert('Bee' > 'Be'); //true
+
+// 26... Har xil turdagi qiymatlarni solishtirganda, JavaScript qiymatlarni raqamlarga aylantiradi.
+
+// alert( '2' > 1 ); // true, string '2' becomes a number 2
+// alert( '01' == 1 );
+
+// 27... 
+
+// let a = 0;
+// alert( Boolean(a) ); // false
+
+// let b = "0";
+// alert( Boolean(b) ); // true
+
+// alert(a == b); // true!
