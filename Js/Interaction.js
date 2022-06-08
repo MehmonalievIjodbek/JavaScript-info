@@ -211,3 +211,134 @@
 // alert( Boolean(b) ); // true
 
 // alert(a == b); // true!
+
+// 28... 
+
+// let year = prompt('Bu yil 2022-yil',' ');
+
+// if (year == 2022) {
+//   alert( 'Ha togri!' );
+// } else {
+//   alert( 'Notogri' ); // any value except 2015
+// }
+
+// 29...
+// let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
+
+// if (year < 2015) {
+//   alert( 'Too early...' );
+// } else if (year > 2015) {
+//   alert( 'Too late' );
+// } else {
+//   alert( 'Exactly!' );
+// }
+
+// 30...Shartli operator '?'
+// Ba'zan biz shartga qarab o'zgaruvchini belgilashimiz kerak.
+
+// let accessAllowed;
+// let age = prompt('How old are you?', '');
+
+// if (age > 18) {
+//   accessAllowed = true;
+// } else {
+//   accessAllowed = false;
+// }
+
+// alert(accessAllowed);
+
+// 31... Baholanadi: agar haqiqat bo'lsa , value1qaytariladi, aks holda – value2. 
+
+// let age = 16;
+// let accessAllowed = (age > 18) ? true : false;
+// console.log(accessAllowed);
+
+// 32... Savol belgisi operatorlari ketma-ketligi ?bir nechta shartlarga bog'liq bo'lgan qiymatni qaytarishi mumkin.
+
+// let age = prompt('age?', 18);
+
+// let message = (age < 3) ? 'Hi, baby!' :
+//   (age < 18) ? 'Hello!' :
+//   (age < 100) ? 'Greetings!' :
+//   'What an unusual age!';
+
+// alert( message );
+
+// 33... Bu esa else if ko'rinishda
+
+// if (age < 3) {
+//     message = 'Hi, baby!';
+//   } else if (age < 18) {
+//     message = 'Hello!';
+//   } else if (age < 100) {
+//     message = 'Greetings!';
+//   } else {
+//     message = 'What an unusual age!';
+//   }
+//   alert(message)
+
+// 34... Bazida ? belgisi quyidagi so'zlarni almashtirish uchun ishlatiladi
+
+// let company = prompt('Which company created JavaScript?', '');
+
+// (company == 'bek') ?
+//    alert('Right!') : alert('Wrong.');
+
+// 35...34ni if elseda ko'rinishi
+
+// let company = prompt('Which company created JavaScript?', '');
+
+// if (company == 'bek') {
+//   alert('Right!');
+// } else {
+//   alert('Wrong.');
+// }
+
+// 36... alertga biror nima chiqadimi ha chiqadi    
+
+// if ("0") {
+//     alert( 'Hello' );
+//   }
+
+// 37... 
+
+// let value = prompt('Type a number', 0);
+
+// if (value > 0) {
+//   alert( 1 );
+// } else if (value < 0) {
+//   alert( -1 );
+// } else {
+//   alert( 0 );
+// }
+
+// 38...
+
+// let result;
+
+// if (a + b < 4) {
+//   result = 'Below';
+// } else {
+//   result = 'Over';
+// }
+
+// O'ZGARYAPTI ? GA
+
+// let result = (a + b < 4) ? 'Below' : 'Over';
+
+// 39...
+
+// let message;
+
+// if (login == 'Employee') {
+//   message = 'Hello';
+// } else if (login == 'Director') {
+//   message = 'Greetings';
+// } else if (login == '') {
+//   message = 'No login';
+// } else {
+//   message = '';
+// }
+
+// let message  = (login == 'Employee') ? 'Hello'
+// : (login == 'Director') ? 'Greetings' : (login == '') ? 'No Login' : '';
