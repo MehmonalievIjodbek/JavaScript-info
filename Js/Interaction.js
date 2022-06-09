@@ -342,3 +342,81 @@
 
 // let message  = (login == 'Employee') ? 'Hello'
 // : (login == 'Director') ? 'Greetings' : (login == '') ? 'No Login' : '';
+
+// 40... // || (YOKI)   Agar uning argumentlaridan biri true bo'lsa true qayataradi, aks holda esa false qaytaradi
+
+// alert( true || true );   // true
+// alert( false || true );  // true
+// alert( true || false );  // true
+// alert( false || false ); // false
+
+// 41... &&agar uning operandlaridan biri false bo'lsa false qaytaradi aks holda esa true 
+
+// alert( true && true );   // true
+// alert( false && true );  // false
+// alert( true && false );  // false
+// alert( false && false ); // false
+
+// 42...
+// let hour = 12;
+// let minute = 30;
+
+// if (hour == 12 && minute == 40  ) {
+//   alert( 'The time is 12:30' );
+// }
+
+// if the first operand is truthy,
+// AND returns the second operand:
+// alert( 1 && 0 ); // 0
+// alert( 4 && 5 );
+
+// 43... Barcha qiymatlar to'g'ri bo'lsa, oxirgi qiymat qaytariladi:
+
+// alert( 1 && 2 && 3 ); // 3, the last one
+
+// 44...
+
+// let x = 1;
+
+// (x > 0) && alert( 'Greater than zero!' );
+
+// 45... 
+// let x = 1;
+
+// if (x > 0) alert( 'Greater than zero!' );
+
+// 46... ! teskari qiymat qaytaradi Masalan:
+
+// alert( !true ); // false
+// alert( !0 ); // true
+
+// Ba'zan qiymatni mantiqiy turga aylantirish uchun double NOT !!ishlatiladi:
+
+// alert( !!"non-empty string" ); // true
+// alert( !!null ); // false
+
+// !! double notni urniga boolean yozilsa ham Mantiqiy turni o'zi chiqadi
+
+// alert( Boolean("Not a Number")); //true
+// alert( Boolean(null)); //false
+
+// 47...
+// let userName = prompt("Who's there?", '');
+
+// if (userName === 'Admin') {
+
+//   let pass = prompt('Password?', '');
+
+//   if (pass === 'TheMaster') {
+//     alert( 'Welcome!' );
+//   } else if (pass === '' || pass === null) {
+//     alert( 'Canceled' );
+//   } else {
+//     alert( 'Wrong password' );
+//   }
+
+// } else if (userName === '' || userName === null) {
+//   alert( 'Canceled' );
+// } else {
+//   alert( "I don't know you" );
+// }
