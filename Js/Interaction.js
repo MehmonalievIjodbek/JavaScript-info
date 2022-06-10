@@ -180,18 +180,18 @@
 // let x = 1 + (a *= 2);
 // console.log(x);
 
-// 23... taqqoslashlar 
+// 23... taqqoslashlar
 
 // alert(2 > 1);  //true
 // alert(2 == 1); //false
 // alert(2 != 1); //true
 
-// 24... Har qanday taqqoslash o'ziga o'zgaruvchi tayinlashi mumkin 
+// 24... Har qanday taqqoslash o'ziga o'zgaruvchi tayinlashi mumkin
 
 // let result = 5 > 4; // assign the result of the comparison
 // alert( result );
 
-// 25... boshqasidan kottaroq yoki yo'qligini bilish uchun ishlatiladi 
+// 25... boshqasidan kottaroq yoki yo'qligini bilish uchun ishlatiladi
 
 // alert( 'Z' > 'A'); //true
 // alert( 'Glow' > 'Glee'); //true
@@ -202,7 +202,7 @@
 // alert( '2' > 1 ); // true, string '2' becomes a number 2
 // alert( '01' == 1 );
 
-// 27... 
+// 27...
 
 // let a = 0;
 // alert( Boolean(a) ); // false
@@ -212,7 +212,7 @@
 
 // alert(a == b); // true!
 
-// 28... 
+// 28...
 
 // let year = prompt('Bu yil 2022-yil',' ');
 
@@ -247,7 +247,7 @@
 
 // alert(accessAllowed);
 
-// 31... Baholanadi: agar haqiqat bo'lsa , value1qaytariladi, aks holda – value2. 
+// 31... Baholanadi: agar haqiqat bo'lsa , value1qaytariladi, aks holda – value2.
 
 // let age = 16;
 // let accessAllowed = (age > 18) ? true : false;
@@ -294,13 +294,13 @@
 //   alert('Wrong.');
 // }
 
-// 36... alertga biror nima chiqadimi ha chiqadi    
+// 36... alertga biror nima chiqadimi ha chiqadi
 
 // if ("0") {
 //     alert( 'Hello' );
 //   }
 
-// 37... 
+// 37...
 
 // let value = prompt('Type a number', 0);
 
@@ -350,7 +350,7 @@
 // alert( true || false );  // true
 // alert( false || false ); // false
 
-// 41... &&agar uning operandlaridan biri false bo'lsa false qaytaradi aks holda esa true 
+// 41... &&agar uning operandlaridan biri false bo'lsa false qaytaradi aks holda esa true
 
 // alert( true && true );   // true
 // alert( false && true );  // false
@@ -380,7 +380,7 @@
 
 // (x > 0) && alert( 'Greater than zero!' );
 
-// 45... 
+// 45...
 // let x = 1;
 
 // if (x > 0) alert( 'Greater than zero!' );
@@ -420,3 +420,76 @@
 // } else {
 //   alert( "I don't know you" );
 // }
+
+// 48... ?? Bu operand qiymati bor narsani qabul qiladi
+
+// let user;
+// alert(user ?? "anonymous") //anonymous
+
+// let user = 'John';
+// alert(user ?? "anonymous") //John
+
+// let firstName = null;
+// let lastName = null;
+// let nickName = "SuperCoder";
+// alert(firstName ?? lastName ?? nickName ?? "anonymous")  //SuperCoder
+
+// // 49...
+// let a = prompt();
+// let b = prompt();
+// alert(a > 2 && b <= 3);
+
+// let a = prompt("Sonni Yoz", "");
+// let b = prompt("Sonni Yoz", "");
+// alert(a % 2 != 0 && b % 2 != 0);
+
+// let a = prompt("Sonni Yoz", "");
+// let b = prompt("Sonni Yoz", "");
+// alert(a % 2 == 0 || a % 2 != 0 && b % 2 == 0 || b % 2 != 0 );
+
+// let a = prompt();
+// console.log(a * 100 + " sm");
+
+// let a = prompt("A sonni kiriting", " ")
+// let b = prompt("A sonni kiriting", " ")
+// alert( a / b);
+
+// let a = prompt("A sonni kiriting", " ")
+// let b = prompt("A sonni kiriting", " ")
+// alert( a % b);
+
+// let a = prompt("a");
+// let b = 10;
+
+// alert((a + b));
+// alert(a % b);
+
+// let a = prompt("a");
+// let b = 10;
+
+// // alert(Math.trunc(a / b));
+// // alert(a % b);
+
+// alert(Math.trunc(a / b) + (a % b))
+
+// let a = prompt("Sonni kiriting", "");
+// let b = prompt("Ikkinchi son", "")
+// if(a > b){
+//     alert(a)
+// }else{
+//     alert(b)
+// }
+
+
+// 50...
+// let height = null;
+// let width = null;
+
+// let area = (height ?? 100) * (width ?? 50);
+// alert(area) //5000    100* 50 = 5000
+
+// 51...
+// let area = height ?? (100 * width) ?? 50;
+// console.log(area); 
+
+// 52... 
