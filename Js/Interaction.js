@@ -493,3 +493,236 @@
 // console.log(area); 
 
 // 52... 
+
+// for (let i = 0; i < 3; i++) {
+//     alert(i); // 0, 1, 2
+//   }
+//   alert(i);
+
+// 53... 
+
+// for (let i = 2; i <= 10; i++) {
+//     if (i % 2 == 0) {
+//         alert(i)
+//     }
+// }    
+
+// 54..LOOPLAR WHILE VA FOR 
+// BU SIKL 3 MARTA AYLAN DEGANI 
+
+// let i = 0;
+// while(i < 3){
+//     alert(i)
+//     i++
+// }
+
+//BU SIKL ESA ORQAGA AYLANADI
+
+// let i = 3
+// while(i){
+//     alert(i);
+//     i--
+// }
+
+// 55... Bir chiziqli tana Bo'lsa qavslar shart emas
+
+// let i = 3;
+// while (i) alert(i--);
+
+// 56...LOOP AVVAL TANANI BAJARADI KEYIN HOLATNI BAJARADI
+
+// let i = 0;
+// do{
+//     alert(i);
+//     i++
+// }while (i < 3)
+
+// 57... FOR SIKL
+
+// for (let i = 0; i < 3; i++){
+//     alert(i);
+// }
+
+// 58... INLINE O'ZGARUVCHILAR DEKLARATSIYASI 
+
+// for(let i = 0; i < 3; i++){
+//     alert(i);
+// }alert(i);
+
+// let i = 0;;
+// for (i = 0; i < 3; i++){
+//     alert(i);
+// }alert(i);
+
+// 59... CONTINUE 
+
+//BU FAQAT TOQ QIYMATLARNI QAYTARADI
+
+// for(let i = 0; i < 10; i++){
+//     if(i % 2 == 0) continue;
+//     alert(i);
+// }
+
+// for(let i = 0; i < 10; i++){
+//     if (i % 2){
+//         alert(i)
+//     }
+// } 
+
+// 60... BUNGA 100DAN KICHIK SONLAR KIRITILSA YANA QAYTA DEP SO'RAYDI? BUNGA FAQAT 100 DAN KATTA SON KIRITISH KERAK
+
+// let num;
+// do {
+//     num = prompt("Enter a number greater than 100?", 0);
+
+// } while (num <= 100 && num)
+
+// 61... TUB SONLARNI CHIQARISH 
+
+// let n = 10;
+
+// nextPrime:
+// for(let i = 2; i <=n; i++){
+//     for(let j = 2; j < i; j++){
+//         if(i % j == 0) continue nextPrime
+//     }
+//     alert(i)
+// }
+
+
+// 62... 
+// let a = "1";
+// let b = 0;
+
+// switch (+a) {
+
+//   case b + 1:
+//   case a + 1:
+//     alert("this runs, because +a is 1, exactly equals b+1");
+//     break;
+
+//   default:
+//     alert("this doesn't run");
+// }
+
+// 63...
+
+// const fac = (n) => {
+//     if (n === 1) {
+//         return 1;
+
+//     } else {
+//         return n * fac(n - 1)
+//     }
+// }
+// const ans = fac(3)
+// console.log(ans);
+
+// 64... 
+
+// let a = 2 + 3;
+// switch (a) {
+//     case 3:
+//         alert('too small');
+//         break;
+//     case 4:
+//         alert('Exastly');
+//         break;
+//     case 5:
+//         alert(('Too big'))
+//         break;
+//     default:
+//         alert("I dont know")
+// }
+
+// 65...  
+
+// let a = 3;
+// switch (a) {
+//     case 4:
+//         alert('Right')
+//         break;
+// case 3:
+//     case 5:
+//     alert('Wrong')
+//     alert('why don\'t you');
+//     break;
+//     default:
+//         alert('sdfms')
+//         break;
+// }
+
+// 66... Type Matters
+
+
+// let arg = prompt("Enter a value?");
+// switch (arg) {
+//     case '0':
+//     case '1':
+//         alert('one or zero');
+//         break;
+//     case '2':
+//         alert('two');
+//         break;
+//     case 3:
+//         alert('Never executes!');
+//         break;
+
+//     default:
+//         alert('an unknown value')
+// }
+
+
+// 67...  Switchda masala
+
+// switch (browser) {
+//     case 'Edge':
+//         alert('Youve Got the Edge!');
+//         break;
+//     case 'Chrome':
+//     case 'Fire Fox':
+//     case 'Safari':
+//     case 'Opera':
+//         alert('Okay we support these');
+//         break;
+//     default:
+//         alert('Hech nima')
+// }
+
+// Huddi shu masala if da
+
+// if (browser == 'Edge') {
+//     alert('Youve Got the Edge');
+// } else if (browser == 'Chrome' || browser == 'Fire Fox' || browser == 'Safari' || browser == 'Opera') {
+//     alert('okay we support these browsers')
+// } else {
+//     alert('we hope that this page');
+// }
+
+// 68... IF dan masala
+
+// let a = +prompt('a?', '');
+// if (a == 0) {
+//     alert(0);
+// }
+// if (a == 1) {
+//     alert(1);
+// }
+// if (a == 2 || a == 3) {
+//     alert('2,3')
+// }
+
+// Huddi shu masala switchda 
+
+// switch (a) {
+//     case 10:
+//         alert(0)
+//         break;
+//     case 1:
+//         alert(1);
+//         break;
+//     case 2:
+//     case 3:
+//         alert(2, 3);
+//         break;
+// }
