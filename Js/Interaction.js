@@ -726,3 +726,141 @@
 //         alert(2, 3);
 //         break;
 // }
+
+
+// 69... Funksiya ichida o'zgaruvchi elon qilinsa faqat shu funksiya ichida ko'rinadi Local variables 
+// function showMessage() {
+//     let message = "Hello, I'm JavaScript!"; // local variable
+
+//     alert( message );
+//   }
+
+//   showMessage(); // Hello, I'm JavaScript!
+
+// 70...Tashqi o'zgaruvchilar Outer variables funksiya tashqi o'zgaruvchiga ham kirishi mumkin 
+
+// let userName = 'John';
+// function showMessage() {
+//     let message = 'Hello, ' + userName;
+//     alert(message);
+// }
+// showMessage();
+
+// 71... Funkisya tashqi o'zgaruvchiga to'liq kriish huquqiga ega. Buni o'zgartirish mumkin
+
+// let userName = 'John';
+// function showMessage() {
+//     userName= "Bob";
+//     let message = "Hello, " + userName;
+//     alert(message);
+// }
+// showMessage();
+
+// 72... Agar funksiyada tashqi va ichki o'zgaruvchi bo'lsa tashqi o'zgaruvchini soya qiladi 
+
+// let userName = "John";
+// function showMessage() {
+//     let userName = "Bob";
+//     let message  = "Hello, " + userName;
+//     alert(message);
+// }
+// showMessage()
+
+// 73... Global o'zgarvchilar variables Funskiyadan tahsqarida elon qilingan o'zgaruvchilar global deyiladi
+
+// function showMessage(from, text) {
+//     from = '*' + from + '*';
+//     alert(from + ': ' + text);
+// }
+// let from = "Ann";
+// showMessage(from, "Hello"); 
+// alert(from);    
+//  74...
+
+// function showMessage(from, text = "no text"){
+//     console.log(from + ": " + text);
+// }
+// showMessage("Ann", )
+
+// 75... 
+// function sum(a, b) {
+//     return a + b;
+// }
+// let result = sum(1, 2);
+// alert(result); //3
+
+// 76... Return bitta funckisyada ko'p holarda bo'lishi mumkin
+// function checkAge(age) {
+//     if (age >= 18){
+//         return true;
+//     }else {
+//         return confirm('Do you have')
+//     }
+// }
+// let age = prompt('How old are you?', '');
+// if (checkAge(age)){
+//     alert('Access granted');
+// }else {
+//     alert('Access denied');
+// }
+
+// 77... 
+
+// function doNothing() {
+//     return;
+// }alert(doNothing() === undefined) //true
+
+// 78... 
+// function checkAge(age) {
+//     if(age > 18){
+//         return true;
+//     }
+//     else{
+//         return confirm('Didi parents allow you')
+//     }
+// }
+
+// ordan foydalanish ||
+
+// function checkAge(age) {
+//     return (age > 18) || confirm('Did parents allow you');  
+// }
+
+// savol belgisidan foydalanish ?
+
+// function checkAge(age) {
+//     return (age > 18) ? true : confirm ('Did parents allow you?')
+// }
+
+// 79... eng Kichigini chiqaruvchi funckisya
+
+// function min(a, b){
+//     if (a > b){
+//         return a;
+//     }else {
+//         return b;
+//     }
+// }
+
+
+// function min(a,  b) {
+//     return a < b ? a : b
+// }
+
+// 80... Sonni marta ko'paytirish
+
+// function pow(x, n) {
+//     let result = x;
+//     for (let i = 1; i < n; i++) {
+//         result *= x;
+//     }
+//     return result;
+// }
+// let x = prompt("x?",);
+// let n = prompt("n?",);
+
+// if (n < 1) {
+//     alert(`Power ${n} is not supported`);
+// } else {
+//     alert(pow(x, n))
+// }
