@@ -864,3 +864,47 @@
 // } else {
 //     alert(pow(x, n))
 // }
+
+
+// 81... Functions expressions Funksiya bu qiymat
+
+// function ask(question, yes, no) {
+//   if(confirm(question)) yes()
+//   else no()
+// }
+// function showOk() {
+//   alert("Siz uddaladingiz")
+// }
+// function showCancel() {
+//   alert("Siz xato kod yozdingiz")
+// }
+
+// ask("Siz oldinga yurmoqchimisiz>",showOk, showCancel);
+
+// function ask(question, yes, no) {
+//   if(confirm(question)) yes()
+//   else no ()
+// }
+// ask(
+//   "Siz oldinga yurmoqchimisiz?",
+//   function(){ alert ("Ha");},
+//   function(){ alert ("Yo'q");}
+// ); 
+
+// 82... funcksiya Declaration 
+// function sum(a,b) {
+//   return a+b;
+// }
+
+// 83.. funcksiya Expression
+// let sum = function (a, b) {
+//   return a + b;
+// }
+
+// 84... 
+  // sayHi("John");
+  // function sayHi(name) {
+  //   alert(`Hello ${name}`)
+  // };
+
+  
